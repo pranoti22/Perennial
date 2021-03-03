@@ -1,0 +1,42 @@
+<Project name="Try">
+	<Module name="Module 1">
+		<IOException>
+			<Actions> 
+				<Action name="email" to= ".com" from="x@y.com" subject="Something Went Wrong"/>
+				<Action name="log" logFilePath="/Something Went Wrong"/>
+				<Action name="abort"/>
+			</Actions>
+		</IOException>
+		<SQLException>
+			<Actions>
+				<Action name="log" logFilePath="/Something Went Wrong"/>
+				<Action name="abort"/>
+			</Actions>
+		</SQLException>
+		<FileNotFoundException>
+			<Actions>
+				<Action name="abort"/>
+			</Actions>
+		</FileNotFoundException>
+	</Module>
+	<Module name="Module 2">
+		<IOException>
+			<Actions> 
+				<Action name="email" to= ".com" from="x@y.com" subject="Something Went Wrong"/>
+				<Action name="log" logFilePath="/Something Went Wrong"/>
+				<Action name="abort"/>
+			</Actions>
+		</IOException>
+		<SQLException>
+			<Actions>
+				<Action name="log" logFilePath="/Something Went Wrong"/>
+				<Action name="abort"/>
+			</Actions>
+		</SQLException>
+		<FileNotFoundException>
+			<Actions>
+				<Action name="abort"/>
+			</Actions>
+		</FileNotFoundException>
+	</Module>
+</Project>

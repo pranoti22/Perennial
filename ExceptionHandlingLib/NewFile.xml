@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Try">
+	<Module name="Module 1">
+		<IOException>
+			<Actions> 
+				<Action name="email" to= "pano22p@gmail.com" from="pano22p@gmail.com" pwd="22Feb@2000" subject="Something Went Wrong"/>
+				<Action name="log" logFilePath="/Users/HP/Desktop/perennial/Try/Exceptions.txt"/>
+				<Action name="abort"/>
+				<Action name="shutdown"/>
+				
+			</Actions>
+		</IOException>
+		<SQLException>
+			<Actions>
+				<Action name="log" logFilePath="/Users/HP/Desktop/perennial/Try/Exceptions.txt"/>
+				<Action name="abort"/>
+			</Actions>
+		</SQLException>
+		<FileNotFoundException>
+			<Actions>
+				<Action name="abort"/>
+			</Actions>
+		</FileNotFoundException>
+	</Module>
+	<Module name="Module 2">
+		<IOException>
+			<Actions> 
+				<Action name="email" to= "pano22p@gmail.com" from="pano22p@gmail.com" pwd="22Feb@2000" subject="Something Went Wrong"/>
+				<Action name="log" logFilePath="/Users/HP/Desktop/perennial/Try/Exceptions.txt"/>
+				<Action name="abort"/>
+			</Actions>
+		</IOException>
+		<SQLException>
+			<Actions>
+				<Action name="log" logFilePath="/Users/HP/Desktop/perennial/Try/Exceptions.txt"/>
+				<Action name="abort"/>
+			</Actions>
+		</SQLException>
+		<FileNotFoundException>
+			<Actions>
+				<Action name="abort"/>
+			</Actions>
+		</FileNotFoundException>
+	</Module>
+</Project>
